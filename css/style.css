@@ -145,12 +145,132 @@ width: 500px;
   width: 400px;
 }
 
+.ex-9-img:hover {
+  transition: 2s;
+  margin: 100px 200px;
+  width: 800px;
+  border-radius: 25px;
+  animation-name: colorscale-3;
+  animation-duration: 5s;
+}
+
+@keyframes colorscale-3 {
+  0% {filter: grayscale(0%);}
+  20% {filter: grayscale(100%);}
+  40% {filter: grayscale(0%);}
+  60% {filter: sepia(0%);}
+  80% {filter: sepia(100%);}
+  100% {filter: sepia(0%);}
+}
+
+
+/* ESERCIZIO 10 */
+
 .ex-10-icon {
   font-size: 60px;
 }
+
+.ex-10-icon {
+  animation: linear infinite;
+  animation-duration: 2s;
+  animation-name: full-circle1;
+}
+
+@keyframes full-circle1 {
+  0%{
+    transform:rotate(0deg)
+  }
+
+  25%{
+    transform:rotate(90deg)
+  }
+
+  50%{
+    transform:rotate(180deg)
+  } 
+
+  75%{
+    transform:rotate(270deg)
+  } 
+
+  100%{
+    transform:rotate(360deg)
+  } 
+}
+
+
+/* ESERCIZIO 11 */
+
 .ex-11-icon {
   font-size: 60px;
 }
+
+.ex-11-icon:hover {
+  animation: linear infinite;
+  animation-duration: 2s;
+  animation-name: full-circle2;
+}
+
+@keyframes full-circle2 {
+  0%{
+    transform:rotate(0deg)
+  }
+
+  25%{
+    transform:rotate(90deg)
+  }
+
+  50%{
+    transform:rotate(180deg)
+  } 
+
+  75%{
+    transform:rotate(270deg)
+  } 
+
+  100%{
+    transform:rotate(0deg)
+  } 
+}
+
+
+/* ESERCIZIO 12 */
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: moving1 1s linear;
+}
+@keyframes moving1 {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 40%
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: moving2 1s linear;
+}
+@keyframes moving2 {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: 30%
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+/* ESERCIZIO 13 */
+
+
+
+
 .ex-12-button, .ex-13-button {
   position: relative;
   display: block;

@@ -170,9 +170,9 @@ width: 500px;
   font-size: 60px;
 }
 
-.ex-10-icon:hover {
+.ex-10-icon {
   animation: linear infinite;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-name: full-circle1;
 }
 
@@ -235,6 +235,41 @@ width: 500px;
 
 
 /* ESERCIZIO 12 */
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: moving1 1s linear;
+}
+@keyframes moving1 {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 40%
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: moving2 1s linear;
+}
+@keyframes moving2 {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: 30%
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+/* ESERCIZIO 13 */
+
+
+
 
 .ex-12-button, .ex-13-button {
   position: relative;

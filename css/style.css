@@ -1,4 +1,4 @@
-/* ESERCIZIO */
+/* ESERCIZIO 1*/
 
 .ex-1-square {
   width: 100px;
@@ -6,21 +6,62 @@
   border: 1px solid red;
 }
 
+.ex-1-square:hover {
+  background-color: red;
+  transition: 1s;
+}
+
+
+/* ESERCIZIO 2 */
+
 .ex-2-square {
   width: 100px;
   height: 100px;
   background: red;
 }
+
+.ex-2-square:active {
+  width: 100%;
+  transition: 2s;
+}
+
+
+/* ESERCIZIO 3 */
+
 .ex-3-square {
   width: 100px;
   height: 100px;
   background: red;
 }
+
+.ex-3-square:hover {
+  transition: 2s;
+  border-radius: 50%;
+}
+
+
+/* ESERCIZIO 4 */
+
 .ex-4-square {
   width: 100px;
   height: 100px;
   background: red;
 }
+
+.ex-4-square:hover {
+  animation-duration: 2s;
+  animation-name: puff;
+}
+
+@keyframes puff {
+  0% {opacity: 1;}
+
+  100% {opacity: 0;}
+}
+
+
+/* ESERCIZIO 5 */
+
 .ex-5-square {
   margin: 20px;
   width: 60px;
